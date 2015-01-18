@@ -1,5 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+##
+## Functions create a user defined wrapper for system matrix type.
+## Encapsulates the ability to store prior inverse computations for speed
+
+
 
 ## Write a short comment describing this function
 ## Create a list of member functions for a user defined vector wrapper
