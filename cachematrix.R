@@ -1,13 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+
 ##
 ## Functions create a user defined wrapper for system matrix type.
 ## Encapsulates the ability to store prior inverse computations for speed
 
 
-
-## Write a short comment describing this function
 ## Create a list of member functions for a user defined vector wrapper
+## This creates a user defined type of matrix that extends the
+## system matrix type
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -24,8 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 ## Returns a matrix inverse or the cached value of the matrix inverse
+## The function works with the type defined above for the new matrix type
 cacheSolve <- function(x) {
   
   inv <- x$getInverse()
